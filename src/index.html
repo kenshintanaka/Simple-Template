@@ -4,14 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Template</title>
-    <link rel="stylesheet" href="../css/output.css" />
-    <script type="importmap">
-      {
-        "imports": {
-          "@/": "../"
-        }
-      }
-    </script>
   </head>
   <body
     class="bg-gradient-to-br from-blue-100 via-white to-pink-100 min-h-screen flex items-center justify-center"
@@ -31,19 +23,8 @@
         </p>
       </main>
       <footer class="footer text-center text-sm text-gray-500 border-t pt-4">
-        <p>&copy; <span id="year">XXXX</span> Sobbing Cat's Simple Template</p>
+        <p>&copy; <span id="year">2025</span> Sobbing Cat's Simple Template</p>
       </footer>
     </div>
-    <script type="module">
-      import { shuffle } from "@/lib/array.js";
-
-      const myArray = [1, 2, 3, 4, 5];
-      const shuffledArray = shuffle(myArray);
-      console.log("Shuffled Array:", shuffledArray);
-
-      document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("year").textContent = new Date().getFullYear();
-      });
-    </script>
   </body>
 </html>
