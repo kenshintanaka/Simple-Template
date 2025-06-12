@@ -1,4 +1,4 @@
-# Simple Project Template v0.1.0-alpha.1
+# Simple Project Template v0.1.0-alpha.3
 
 A basic project template with a straightforward structure and Tailwind CSS integration for rapid development. All project source files, including a pre-configured `index.html` with Tailwind CSS examples, are located within the `src` directory.
 
@@ -27,6 +27,7 @@ This template is set up to use Tailwind CSS for styling. The main `src/index.htm
    The `./src/css/input.css` file is where you'll include Tailwind's base styles, components, and utilities. It's also the place for your custom CSS and any pre-existing configurations, such as custom CSS variables (e.g., those from shadcn).
 2. **Start the Tailwind CSS development process:**
    Open your terminal and run the following command from the root of the project. This command tells the Tailwind CSS CLI to scan your HTML files (like the pre-configured `src/index.html`) and other specified content sources for Tailwind class names. It then generates the corresponding CSS into `./src/css/output.css` and will continue to watch for any changes you make to your `input.css` or your template files, automatically rebuilding `output.css` as needed.
+
    ```bash
    npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch
    ```
